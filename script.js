@@ -43,6 +43,34 @@ toggle.addEventListener('click', () => {
     });
 });
 
+// Hamburger menu
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+
+hamburger.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    hamburger.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', isOpen);
+});
+
+// Close mobile menu on link click
+document.querySelectorAll('.mobile-link, .mobile-menu .btn-primary-lg').forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', false);
+    });
+});
+
+// Close on outside click
+document.addEventListener('click', (e) => {
+    if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) {
+        mobileMenu.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', false);
+    }
+});
+
 // Nav scroll effect
 window.addEventListener('scroll', () => {
     const nav = document.querySelector('nav');
