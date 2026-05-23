@@ -99,7 +99,7 @@ Or simply download the HTML file and open it in any browser.
 **Eniola Sulaiman**
 
 - Facebook: [@eniolasulaiman]([https://facebook.com/your-facebook-handle](https://www.facebook.com/share/19uAfN1mr4/))
-- Instagram: [@ennyboss_dev](https://instagram.com/ennyboss_dev)
+- Instagram: [@eniolasulaiman_web](https://instagram.com/eniolasulaiman_web)
 - GitHub: [@eniolasulaiman](https://github.com/eniolasulaiman)
 
 > Built as a portfolio project to showcase frontend development and SaaS UI/UX design skills.
